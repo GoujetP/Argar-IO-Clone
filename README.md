@@ -39,3 +39,17 @@ let settings = {
 ```
 Ce sont les meilleures paramètres pour tester notre projet avec le multijoueur.
 Changez ```worldWidth``` et ```worldHeight``` (5000 x 5000 par exemple ) pour une plus grande carte.
+
+# Explication des classes
+
+1. Orbs --> La nourriture
+2. PlayerConfig --> Stocke les données que les autres joueurs n'ont pas besoins de savoir
+3. PlayerData --> Stocke les données qu'on doit transmettre aux autres joueurs
+4. Player --> Contient un socketid , un PlayerConfig et un PlayerData
+5. checkCollisions --> Fonctions qui retourne s'il y a une collision entre une nourriture et un joueur ou entre joueur. Elle update aussi le leaderboard.
+6. socketMain --> classe principale qui initialise la partie, qui gère les déplacements des joueurs, qui gère les connexions des joueurs.
+7. socketStuff --> classe qui reçoit les ```emit``` de socketMain. Elle renvoie un message à l'écran quand un joueur mange un autre par exemple.
+8. canvasStuff --> Là où tout est dessiner sur le canvas et calcul le déplacement des joueurs.
+9. servers --> crée le serveur.
+10. expressMain --> renvoie que l'application Express de servers.
+11. index --> permet de lancer le jeu en connectant l'app Express et socketMain.

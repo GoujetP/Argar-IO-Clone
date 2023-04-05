@@ -1,4 +1,4 @@
-// reation du server socket et de express
+// Creation du server socket et de express
 const express = require('express');
 const app = express();
 app.use(express.static(__dirname + '/public'));

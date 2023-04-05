@@ -18,13 +18,9 @@ function draw() {
         context.beginPath();
         context.fillStyle = p.color;
         context.arc(p.locX, p.locY, p.radius, 0, Math.PI * 2);
-        const r = Math.floor((Math.random() * 200) + 50);
-        const g = Math.floor((Math.random() * 200) + 50);
-        const b = Math.floor((Math.random() * 200) + 50);
-        const colorStroke = `rgb(${r},${g},${b})`;
         context.fill();
         context.lineWidth = 3;
-        context.strokeStyle = colorStroke;
+        context.strokeStyle = p.colorStroke;
         context.stroke();
     });
 

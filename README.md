@@ -13,7 +13,6 @@
 * NodeJS
 * ExpressJS
 * Socket.io
-* Helmet (Sécurité pour Express)
 * BootStrap
 * JQuery
 

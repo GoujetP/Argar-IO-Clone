@@ -50,11 +50,11 @@ socket.on('updateLeaderBoard', (data) => {
 });
 
 socket.on('playerDeath', (data) => {
-    console.log(`Got killed: ${data.died.name}`);
-    console.log(`The killer: ${data.killedBy.name}`);
-    document.querySelector('#game-message').innerHTML = `${data.died.name} got absorbed by ${data.killedBy.name}`;
+    console.log(`a été tué: ${data.died.name}`);
+    console.log(`Le tueur: ${data.killedBy.name}`);
+    document.querySelector('#game-message').innerHTML = `${data.died.name} a été tué ${data.killedBy.name}`;
     $('#game-message').css({
-        'background-color': '00e6e6',
+        'background-color': '#00e6e6',
         'opacity': 1
     });
     $('#game-message').show();

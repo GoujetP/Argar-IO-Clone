@@ -20,6 +20,10 @@ function draw() {
         context.arc(p.locX, p.locY, p.radius, 0, Math.PI * 2);
         context.fill();
         context.lineWidth = 3;
+        context.font = `${p.score / 2}px`;
+        context.textAlign = `center`;
+        context.fillStyle = 'black';
+        context.fillText(p.name, p.locX, p.locY);
         context.strokeStyle = p.colorStroke;
         context.stroke();
     });

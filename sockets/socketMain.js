@@ -11,7 +11,7 @@ let players = [];
 let settings = {
     defaultOrbs: 50,
     defaultSpeed: 5,
-    defaultSize: 5,
+    defaultSize: 9,
 
     defaultZoom: 1.5,
     worldWidth: 500,
